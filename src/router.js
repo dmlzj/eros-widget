@@ -121,8 +121,8 @@ export default class Router {
                 if (!url) return
                 router.openBrowser(url)
             },
-            setHomePage (url = '') {
-                router.setHomePage(url)
+            setHomePage (url = '', refresh) {
+                router.setHomePage({path: url, refresh})
             },
             finish () {
                 router.finish()
